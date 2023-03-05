@@ -1,0 +1,55 @@
+/***********
+Responsive css
+***********/
+
+/*******
+Mobile devices
+******/
+
+@media (max-width:480px)
+{
+   .main-menu img {
+    max-width: 200px;
+}
+    .top-address{
+        visibility: hidden;
+    }
+    
+}
+
+/*******
+ iPads, Tablets devices
+******/
+
+@media (max-width:768px)
+{
+       .main-menu img {
+    max-width: 200px;
+}
+    .top-address{
+        visibility: hidden;
+    }
+    
+}
+/*******
+Small screens, laptops
+******/
+
+@media (max-width:1024px)
+{
+       .main-menu img {
+    max-width: 200px;
+}
+    
+    
+}
+
+/*******
+Desktops, large screens
+******/
+
+@media (max-width:1200px)
+{
+    
+    
+}

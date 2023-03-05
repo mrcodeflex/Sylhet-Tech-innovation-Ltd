@@ -27,6 +27,9 @@
 </head>
 
 <body>
+    <!--   back to top button-->
+    <button onclick="topFunction()" id="gotop"><i class="fa-solid fa-arrow-up"> </i></button>
+
     <!-- header section -->
 
     <div class="header-top ">
@@ -60,7 +63,7 @@
                     <ul class="d-flex top-contact-ul">
                         <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone">&nbsp; &nbsp; </i>+8801000000</a></li>
                         <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone"> &nbsp; &nbsp; </i>+8801000000</a></li>
-                        <li class="top-contact-li"><a href="#"><i class="fa-solid fa-location-dot">&nbsp; &nbsp; </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
+                        <li class="top-contact-li top-address"><a href="#"><i class="fa-solid fa-location-dot">&nbsp; &nbsp; </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +75,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary main-menu">
                     <div class="row ">
-                        <div class="col-md-3">
+                        <div class="col-lg-3 ">
 
                             <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"> </a>
 
@@ -91,7 +94,7 @@
                                             ABOUT US
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                                            <li><a class="dropdown-item" href="/about%2520us/ourteam.html">Our Team</a></li>
                                             <li><a class="dropdown-item" href="#">Testimonial</a></li>
                                             <li><a class="dropdown-item" href="#">Our Client</a></li>
                                             <li><a class="dropdown-item" href="#">Partnership</a></li>
@@ -137,7 +140,7 @@
                                             <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
                                             <li><a class="dropdown-item" href="#">Sms Marketing</a></li>
                                             <li><a class="dropdown-item" href="#">Corporate Mail Solutions</a></li>
-                                            
+
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -151,12 +154,12 @@
                                             <li><a class="dropdown-item" href="#">Tours & Travels Management Software</a></li>
                                             <li><a class="dropdown-item" href="#">Point Of Sales(pos) Software</a></li>
                                             <li><a class="dropdown-item" href="#">Gas And Oxygen Company Management Software</a></li>
-                                            <li><a class="dropdown-item" href="#">School College University  Management Software</a></li>
+                                            <li><a class="dropdown-item" href="#">School College University Management Software</a></li>
                                             <li><a class="dropdown-item" href="#">Hospital Management Software</a></li>
                                             <li><a class="dropdown-item" href="#">Hr & Payroll Software</a></li>
                                             <li><a class="dropdown-item" href="#">Real Estate Management</a></li>
                                             <li><a class="dropdown-item" href="#">Enterprise Resource Planning (erp)</a></li>
-                                            
+
                                         </ul>
                                     </li>
 
@@ -801,6 +804,8 @@
         </div>
     </section>
 
+    <!-- contact section-->
+
     <section id="contact">
         <div class="container">
             <div class="contact-wrapper">
@@ -1009,9 +1014,9 @@
                             </ul>
                         </nav>
                     </div>
-                    
-<!--                    google map -->
-                    
+
+                    <!--                    google map -->
+
                     <div class="col-sm-6 col-md-4">
                         <div class="mapouter">
                             <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sylhet&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br>
@@ -1041,7 +1046,13 @@
         <div class="sub-footer">
             <div class="container">
                 <div class="text-light">
-                    <p>Copyright © 2022 . <a href="github.com/mrcodeflex"> @mrcodeflex</a> All Rights Reserved</p>
+                    <p>Copyright © 2022 .
+
+
+
+
+                        <a href="github.com/mrcodeflex"> @mrcodeflex</a> All Rights Reserved
+                    </p>
                 </div>
             </div>
 
@@ -1054,8 +1065,6 @@
     <!--    bootstarp-js-->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!--    isotope js-->
-    <script src="assets/isotope/isotope.pkgd.min.js"></script>
     <!--    silk js -->
     <script src="assets/silk/js/slick.min.js"></script>
     <script>
@@ -1088,6 +1097,30 @@
                 slidesToScroll: 1,
                 autoplay: false,
                 infinite: false,
+
+                responsive: [
+                    //    {
+                    //      breakpoint: 1024,
+                    //      settings: {
+                    //        slidesToShow: 5,
+                    //        slidesToScroll: 1,
+                    //      }
+                    //    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
@@ -1124,4 +1157,26 @@
         });
     </script>
 
+    <!--    back to top bitton js-->
+    <script>
+        let backtotop = document.getElementById("gotop");
+
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body></html>
