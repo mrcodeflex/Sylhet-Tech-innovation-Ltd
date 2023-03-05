@@ -218,6 +218,7 @@ button.navbar-toggler {
     border-left: 0.3em solid transparent;
 }
 
+
 /*==============
 Banner section
 ==============*/
@@ -234,72 +235,6 @@ Banner section
     height: 150px;
     background-size: cover
 }
-
-/*==============
-Team Section
-==============*/
-#team-section {
-    padding: 30px 0;
-}
-
-.team-wrapper {
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 3px rgb(0 0 0 / 13%) !important;
-}
-
-.img-box {
-    text-align: center;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.img-box h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    padding: 10px 0;
-    color: #343434;
-}
-
-.img-box p {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 23px;
-    color: #666;
-}
-
-.pic-bg {
-    background-color: #ffffff !important;
-    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
-    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
-    border: none !important;
-}
-
-
-.overlay-container {
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -487,8 +422,287 @@ Footer section
 
 }
 
-
 .sub-footer {
     background-color: #000;
     padding: 20px 0
+}
+
+
+/*===========
+pages css
+============*/
+
+
+/*==============
+Team Section page 
+==============*/
+#team-section {
+    padding: 30px 0;
+}
+
+.team-wrapper {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 13%) !important;
+}
+
+.img-box {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.img-box h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0;
+    color: #343434;
+}
+
+.img-box p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #666;
+}
+
+.pic-bg {
+    background-color: #ffffff !important;
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    border: none !important;
+}
+
+
+.overlay-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+
+
+/***********
+Testimonial section page 
+***********/
+.client-bg {
+    
+    
+/*    background-image: url(assets/images/client-bg.jpg);*/
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.testimonial-wrapper {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.testimonial-title {
+    margin: 30px 0;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto !important;
+    cursor: pointer;
+}
+
+.testimonial-item .client-image {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #eee;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testimonial-item .client-text {
+    font-size: 15px;
+    line-height: 23px;
+    color: #666;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.testimonial-item .client-title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #e84c3d;
+    font-style: italic;
+}
+
+
+
+/*==========
+our client page 
+==========*/
+
+
+.our-client-wrapper  img {
+    height: 75px;
+    margin: 0 auto;
+
+}
+
+.our-client-wrapper  h5 {
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343434
+}
+.our-client-box {
+    box-shadow: 5px 10px 5px #f2f2f2;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border: 1px solid #d8e3f6;
+    border-radius: 12px;
+    transition: .9s;
+}
+
+.our-client-box:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*===========
+partnership page 
+===========*/
+
+/***********
+portfolio section
+***********/
+#portfolio {
+
+    padding: 30px 0;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd
+}
+
+.portfolio-title {
+    padding: 30px 0;
+}
+
+.portfolio-slider .about-box-item img {
+    height: 100px;
+    width: 100%;
+    max-width: 293px;
+
+}
+
+/****
+slider button css
+****/
+.slick-prev {
+    background-color: #db4d3f;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+
+}
+
+.slick-next {
+    background-color: #db4d3f;
+    position: absolute;
+    top: 100%;
+    right: 95%
+}
+
+.slick-prev:before {
+    font-size: 25px;
+    content: '<';
+    font-weight: bold;
+    opacity: 1;
+
+}
+
+.slick-next:before {
+    font-size: 25px;
+    content: '>';
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+.slick-prev:hover {
+    color: rgb(255 153 16);
+    outline: none;
+    background: black;
+}
+
+.slick-prev:focus {
+    color: rgb(255 153 16);
+    outline: none;
+    background: black;
+}
+
+.slick-next:hover {
+    color: rgb(255 153 16);
+    outline: none;
+    background: black;
+}
+
+.slick-next:focus {
+    color: rgb(255 153 16);
+    outline: none;
+    background: black;
+}
+
+
+/*===========
+overview page css
+==========*/
+
+.head-line {
+    padding: 20px 0;
+}
+.head-line-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #343434;
+}
+.separator {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 15px 0 15px;
+    background-color: #ef622b;
+    position: relative;
+}
+.headline-subtitle, text-content p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #666;
+}
+
+.article{
+    padding: 50px 0
+}
+.article h3 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #10245a;
+}
+.article p {
+font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #666;
 }
