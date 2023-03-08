@@ -35,45 +35,43 @@
     <button onclick="topFunction()" id="gotop"><i class="fa-solid fa-arrow-up"> </i></button>
 
     <!-- header section -->
-
-    <div class="header-top ">
-        <div class="container pt-1 pb-1">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-4">
-                    <ul class="d-flex social-ul ">
-                        <li class="social-li">
-                            <a href="#" class="social-a">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="social-li">
-                            <a href="#" class="social-a">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="social-li">
-                            <a href="#" class="social-a">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="social-li">
-                            <a href="#" class="social-a">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <ul class="d-flex top-contact-ul">
-                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone">&nbsp; &nbsp; </i>+8801000000</a></li>
-                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone"> &nbsp; &nbsp; </i>+8801000000</a></li>
-                        <li class="top-contact-li top-address"><a href="#"><i class="fa-solid fa-location-dot">&nbsp; &nbsp; </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
-                    </ul>
-                </div>
+<div class="header-top ">
+    <div class="container pt-1 pb-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-4">
+                <ul class="d-flex social-ul ">
+                    <li class="social-li">
+                        <a href="#" class="social-a">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="#" class="social-a">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="#" class="social-a">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="#" class="social-a">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <ul class="d-flex top-contact-ul">
+                    <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone">&nbsp; &nbsp; </i>+8801000000</a></li>
+                    <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone"> &nbsp; &nbsp; </i>+8801000000</a></li>
+                    <li class="top-contact-li top-address"><a href="#"><i class="fa-solid fa-location-dot">&nbsp; &nbsp; </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
+                </ul>
             </div>
         </div>
     </div>
-
+</div>
      <header>
         <div class="header-bottom container-fluid " id="navbar">
             
@@ -98,7 +96,7 @@
                                             ABOUT US
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="/about%2520us/ourteam.html">Our Team</a></li>
+                                            <li><a class="dropdown-item" href="#">Our Team</a></li>
                                             <li><a class="dropdown-item" href="#">Testimonial</a></li>
                                             <li><a class="dropdown-item" href="#">Our Client</a></li>
                                             <li><a class="dropdown-item" href="#">Partnership</a></li>
@@ -274,7 +272,9 @@
                 </div>
             </div>
         </div>
-    </section <!-- contact section-->
+    </section>
+    
+     <!-- contact section-->
     <section id="contact">
         <div class="container">
             <div class="contact-wrapper">
@@ -554,22 +554,30 @@
 
     <!--   sticky header nav bar js -->
 
+  <script>
+       $(document).ready(function() {
+			
+		   	var stickyNavTop = $('#navbar').offset().top;
+		   	
+		   	
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); 
+			         
+			   
+			    if (scrollTop > stickyNavTop) { 
+			        $('#navbar').addClass('sticky');
+			    } else {
+			        $('#navbar').removeClass('sticky'); 
+			    }
+			};
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
+			stickyNav();
+		
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});
+    
     </script>
 
     <!-- dropdown menu js -->

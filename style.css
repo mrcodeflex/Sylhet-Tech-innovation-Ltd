@@ -246,7 +246,39 @@ hero section css
     background-color: #e84c3d;
 }
 
+/*==============
+Banner section contact page 
+==============*/
+.banner {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 0;
+}
 
+.fixed-image {
+    background-image: url(assets/images/bg-blog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-size: cover
+}
+
+
+.cntct-frm .page-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-top: 30px;
+    color: #343434;
+}
+
+.cntct-frm label.form-label {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #666666;
+
+}
 /***********
 about section 
 ***********/
@@ -772,6 +804,7 @@ Footer section
 .main-footer .col-md-6 .col-sm-6 .list-icons li {
     font-size: 14px;
     line-height: 21px;
+    margin-top: 20px;
 
 }
 

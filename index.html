@@ -63,9 +63,9 @@
                 </div>
                 <div class="col-md-8">
                     <ul class="d-flex top-contact-ul">
-                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone">&nbsp; &nbsp; </i>+8801000000</a></li>
-                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone"> &nbsp; &nbsp; </i>+8801000000</a></li>
-                        <li class="top-contact-li top-address"><a href="#"><i class="fa-solid fa-location-dot">&nbsp; &nbsp; </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
+                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone me-2">&nbsp; &nbsp; </i>+8801000000 &nbsp; &nbsp;</a></li>
+                        <li class="top-contact-li"><a href="#"> <i class="fa-solid fa-phone me-2">  </i>+8801000000 &nbsp; &nbsp;</a></li>
+                        <li class="top-contact-li top-address"><a href="#"><i class="fa-solid fa-location-dot me-2"> </i>House-9, Road-4, Sector-12, Uttara, Dhaka-1230, Bangladesh </a></li>
                     </ul>
                 </div>
             </div>
@@ -178,6 +178,7 @@
         </div>
     </header>
 
+   
     <!--   hero section -->
 
     <section id="hero">
@@ -1125,25 +1126,30 @@
     </script>
 
     <!--   sticky header nav bar js -->
-
-
     <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+        $(document).ready(function() {
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+            var stickyNavTop = $('#navbar').offset().top;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
+
+            var stickyNav = function() {
+                var scrollTop = $(window).scrollTop();
+
+
+                if (scrollTop > stickyNavTop) {
+                    $('#navbar').addClass('sticky');
+                } else {
+                    $('#navbar').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
     </script>
-
     <!-- dropdown menu js -->
     <script>
         $(document).ready(function() {

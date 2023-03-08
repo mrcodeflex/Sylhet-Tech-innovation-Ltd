@@ -8,25 +8,23 @@ Responsive css
 Mobile devices
 ******/
 
-@media (max-width:480px)
-{
-   .main-menu img {
-    max-width: 200px;
-}
-  
-    
+@media (max-width:480px) {
+    .main-menu img {
+        max-width: 200px;
+    }
+
+
 }
 
 /*******
  iPads, Tablets devices
 ******/
 
-@media (max-width:768px)
-{
-       .main-menu img {
-    max-width: 200px;
-}
-    
+@media (max-width:768px) {
+    .main-menu img {
+        max-width: 200px;
+    }
+
 }
 
 
@@ -34,21 +32,22 @@ Mobile devices
 /*============
 990 px max 
 ===========*/
-@media (max-width:990px)
-{
-    
-    .header-top{
+@media (max-width:990px) {
+
+    .header-top {
         display: none !important
     }
-       .main-menu img {
-    max-width: 200px;
-}
-    .top-address{
+
+    .main-menu img {
+        max-width: 200px;
+    }
+
+    .top-address {
         visibility: hidden;
     }
-    
+
 }
-    
+
 }
 
 
@@ -57,20 +56,20 @@ Mobile devices
 Small screens, laptops
 ******/
 
-@media (max-width:1024px)
-{
-       .main-menu img {
-    max-width: 200px;
-}
+@media (max-width:1024px) {
+    .main-menu img {
+        max-width: 200px;
+    }
+
     .infobox h4 {
-    font-size: 22px;
-    padding-top: 20px;
-}
-.infobox p {
-    font-size: 14px;
-    padding-right: 10px
-}
+        font-size: 22px;
+        padding-top: 20px;
+    }
 
-    
-}
+    .infobox p {
+        font-size: 14px;
+        padding-right: 10px
+    }
 
+
+}
