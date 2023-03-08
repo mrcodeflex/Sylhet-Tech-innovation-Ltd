@@ -1,4 +1,10 @@
 /*==========
+inner pages css
+============*/
+
+
+
+/*==========
 common css
 =========*/
 
@@ -150,7 +156,9 @@ header bottom / nav bar css
     background-color: #fff;
     border-bottom: solid 1px #ff7104
 }
-
+.navbar-toggler:focus {
+    box-shadow: 1 0 0 var(--bs-navbar-toggler-focus-width)
+}
 
 /*js functional class for sticky head */
 
@@ -706,3 +714,6 @@ font-size: 26px;
     line-height: 40px;
     color: #666;
 }
+
+
+

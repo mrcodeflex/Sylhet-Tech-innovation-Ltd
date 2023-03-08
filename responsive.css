@@ -2,6 +2,8 @@
 Responsive css
 ***********/
 
+
+
 /*******
 Mobile devices
 ******/
@@ -11,9 +13,7 @@ Mobile devices
    .main-menu img {
     max-width: 200px;
 }
-    .top-address{
-        visibility: hidden;
-    }
+  
     
 }
 
@@ -26,11 +26,33 @@ Mobile devices
        .main-menu img {
     max-width: 200px;
 }
+    
+}
+
+
+
+/*============
+990 px max 
+===========*/
+@media (max-width:990px)
+{
+    
+    .header-top{
+        display: none !important
+    }
+       .main-menu img {
+    max-width: 200px;
+}
     .top-address{
         visibility: hidden;
     }
     
 }
+    
+}
+
+
+
 /*******
 Small screens, laptops
 ******/
@@ -40,16 +62,15 @@ Small screens, laptops
        .main-menu img {
     max-width: 200px;
 }
-    
+    .infobox h4 {
+    font-size: 22px;
+    padding-top: 20px;
+}
+.infobox p {
+    font-size: 14px;
+    padding-right: 10px
+}
+
     
 }
 
-/*******
-Desktops, large screens
-******/
-
-@media (max-width:1200px)
-{
-    
-    
-}
