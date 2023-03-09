@@ -12,7 +12,23 @@ Mobile devices
     .main-menu img {
         max-width: 200px;
     }
+.slick-prev {
+    background-color: #db4d3f;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(5px)
 
+
+}
+
+.slick-next {
+    background-color: #db4d3f;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50px)
+}
 
 }
 
@@ -24,6 +40,22 @@ Mobile devices
     .main-menu img {
         max-width: 200px;
     }
+    .about-box-item img{
+        max-width: 33%
+    }
+
+    
+    .about-box-item {
+    border: solid 1px #e6e6e6;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #d8e3f6;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 5px 10px 5px #f2f2f2;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+        }
 
 }
 

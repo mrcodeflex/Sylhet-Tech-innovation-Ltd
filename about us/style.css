@@ -173,9 +173,6 @@ header bottom / nav bar css
     z-index: 9999
 }
 
-button.navbar-toggler {
-    margin-left: 415px
-}
 
 .main-menu img {
     max-width: 80%;
@@ -287,10 +284,9 @@ contact section
 
 .infobox {
     color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    margin: 10px 0;
+    padding: 10px;
 }
-
 
 
 .info-box-style {
@@ -620,7 +616,7 @@ slider button css
     background-color: #db4d3f;
     position: absolute;
     top: 100%;
-    left: 5px;
+    left: 1%;
 
 }
 
@@ -628,7 +624,7 @@ slider button css
     background-color: #db4d3f;
     position: absolute;
     top: 100%;
-    right: 95%
+    right: 90%
 }
 
 .slick-prev:before {
@@ -699,7 +695,9 @@ overview page css
     line-height: 23px;
     color: #666;
 }
-
+.article-box{
+    padding: 30px 0;
+}
 .article{
     padding: 50px 0
 }
